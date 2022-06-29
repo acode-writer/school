@@ -1,4 +1,14 @@
-<app-navbar></app-navbar>
-
-
-<router-outlet></router-outlet>
+<header>
+    <app-navbar></app-navbar>
+</header>
+<main class="container">
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Welcome to  Lycée d'Excellence de Dakar</h1>
+        <p class="col-md-8 fs-4">We wish to innovate and continue to remain the leader by optimizing the entire educational process of the students and offering visibility to parents and the administration.</p>
+        <button class="btn btn-outline-primary me-sm-3" type="button" routerLink="/add-classroom">Add a new classroom</button>
+        <button class="btn btn-outline-primary" type="button" routerLink="/add-student">Add new studdent</button>
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+</main>
